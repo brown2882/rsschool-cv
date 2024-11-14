@@ -1,2 +1,3 @@
 # rsschool-cv
-+ https://github.com/brown2882/rsschool-cv/blob/gh-pages/cv.md
+# github username brown2882
++ https://brown2882.github.io/rsschool-cv

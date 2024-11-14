@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>RS School - CV</h1>
+        <hr>
+        <h1>Murad Grigoryan</h1>
+        
+        <hr>
+        
+        <h2>Contact</h2>
+        <hr>
+        <p><b>E-mail:</b> grigoryanmurad80@gmail.com</p>
+        <p><b>Telegram:</b> grigoryan_00_28</p>
+        <p><b>Github:</b> brown2882</p>
+
+    </header>
+    <main>
+        <h2>Skills</h2>
+        <p>&#x2022; HTML5, CSS3, SASS</p>
+        <p>&#x2022; js, React, php</p>
+        <p>&#x2022; Git/GitHub</p>
+        <p>&#x2022; VS Code, WebStorm</p>
+       <br>
+
+       <div class="divreact">
+
+        <div>
+            <h2>Summary</h2>
+            <p>
+            I've been a developer for over 2 years, I started with JavaScript, 
+            learned React and PHP and worked on Upwork. I am currently studying at 
+            NPUA University, Department of Informatics and Applied Mathematics.
+            </p>
+          </div>
+
+       <h2>Code example</h2>
+      
+        <p>
+            import {Link, NavLink, useNavigate} from "react-router-dom";<br>
+            import {useForm} from "react-hook-form";<br>
+            import {useState} from "react";<br>
+
+
+            export function Home() { <br>
+                const navigate = useNavigate(); <br>
+                const{ register, handleSubmit } = useForm(); <br>
+                const[login, setlogin] = useState([ <br>
+                 {login:'Mark', password:'Brown', id:1} <br>
+             ]); <br>
+
+
+    const onSumbit = (data) => { <br>
+        const { login: inputlogin, password: inputpassword } = data; <br>
+        const foundUser = login.find((user) => user.login === inputlogin && user.password === inputpassword <br>
+        );<br>
+        navigate("/Adminka");<br>
+      
+    }
+
+
+    return(
+        <div>
+            <form onSubmit={handleSubmit(onSumbit)}>
+                <label>Login</label>
+                <input
+                    type='text'
+                    {...register('login', {required:true})}
+                ></input>
+                <label>Password</label>
+                <input
+                    type='text'
+                    {...register('password', {required:true} )}
+                ></input>
+                <button type='submit'>Send</button>
+            </form>
+        </div>
+    )
+}
+        </p>
+       </div>
+
+       <h2>Education</h2>
+        <p>&#x2022; <b>University</b> - HAPH GM(politechnik) - informatino and applied mathematics</p>
+        <p>&#x2022; <b>Courses</b> Tco Gyumri- frontend developer</p>
+        <hr>
+        <h2>Language</h2>
+        <p>&#x2022; Armenian - Native</p>
+        <p>&#x2022; English - Advanced</p>
+        <p>&#x2022; Russian - Intermediate</p>
+    </main>
+
+
+</body>
+</html>
