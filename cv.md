@@ -1,93 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cvv.css">
+# RS School - CV
+# Murad Grigoryan
+## Contact
+### Gmail: grigoryanmurad80@gmail.com
+### Telegram: grigoryan_00_28
+### Github: brown2882
 
-</head>
-<body>
-    <header>
-        <h1>RS School - CV</h1>
-        <hr>
-        <h1>Murad Grigoryan</h1>
-        
-        <hr>
-        
-        <h2>Contact</h2>
-        <hr>
-        <p><b>E-mail:</b> grigoryanmurad80@gmail.com</p>
-        <p><b>Telegram:</b> grigoryan_00_28</p>
-        <p><b>Github:</b> brown2882</p>
+## Skills
++  HTML5, CSS3, SASS;
++  js, React, php;
++ Git/GitHub;
++  VS Code, WebStorm;
 
-    </header>
-    <main>
-        <h2>Skills</h2>
-        <p>&#x2022; HTML5, CSS3, SASS</p>
-        <p>&#x2022; js, React, php</p>
-        <p>&#x2022; Git/GitHub</p>
-        <p>&#x2022; VS Code, WebStorm</p>
-       <br>
+## Code example
 
-       <div class="divreact">
-
-       <h2>Code example</h2>
-      
-        <p>
-            import {Link, NavLink, useNavigate} from "react-router-dom";<br>
-            import {useForm} from "react-hook-form";<br>
-            import {useState} from "react";<br>
-
-
-            export function Home() { <br>
-                const navigate = useNavigate(); <br>
-                const{ register, handleSubmit } = useForm(); <br>
-                const[login, setlogin] = useState([ <br>
-                 {login:'Mark', password:'Brown', id:1} <br>
-             ]); <br>
-
-
-    const onSumbit = (data) => { <br>
-        const { login: inputlogin, password: inputpassword } = data; <br>
-        const foundUser = login.find((user) => user.login === inputlogin && user.password === inputpassword <br>
-        );<br>
-        navigate("/Adminka");<br>
-      
+ <!--import {memo, useEffect, useState} from "react";
+import RolexOne from './assets/images/rolex1.jpg'
+import RolexTwo from './assets/images/rolex2.jpg'
+import RolexTree from './assets/images/rolex3.webp'
+const App = memo(() => {
+    const[photo, setphoto] = useState([
+        {watch:RolexOne, id:1},
+        {watch:RolexTwo, id:2},
+        {watch:RolexTree, id:3}
+    ])
+    const [loading,setloading] = useState(true)
+    useEffect(() => {
+        setTimeout (() => {
+            setloading(false)
+        }, 1000)
+    },[])
+    const[number, setnumber] = useState(0)
+    const plusNumber = () => {
+        setnumber(number + 1)
+    }
+    const minusNumber = () => {
+        setnumber(number - 1)
     }
 
 
-    return(
-        <div>
-            <form onSubmit={handleSubmit(onSumbit)}>
-                <label>Login</label>
-                <input
-                    type='text'
-                    {...register('login', {required:true})}
-                ></input>
-                <label>Password</label>
-                <input
-                    type='text'
-                    {...register('password', {required:true} )}
-                ></input>
-                <button type='submit'>Send</button>
-            </form>
+  return (
+    <div className="App">
+        {loading === true
+        ?
+            <p>Loading...</p>
+        :
+        <div style={{display:"flex"}}>
+            {photo.map((i, j) => (
+                <div key={j}>
+                    <div className='mainDiv'>
+                        <img style={{height:400, margin:25}} src={i.watch} alt={`Rolex ${i.id}`} />
+                        <div style={{paddingLeft:40}}>
+                        <h1>Whatch for Man</h1>
+                        <h2>1000$</h2>
+                        </div>
+                        <div style={{display:"flex",paddingLeft:60}}>
+                             <button id={j + 1} onClick={plusNumber}>+</button>
+                             <p>{number}</p>
+                             <button onClick={minusNumber}>-</button>
+                         </div>
+                     </div>
+                </div>
+            ))}
         </div>
-    )
-}
-        </p>
-       </div>
+        }
+    </div>
+  );
+})
 
-       <h2>Education</h2>
-        <p>&#x2022; <b>University</b> - HAPH GM(politechnik) - informatino and applied mathematics</p>
-        <p>&#x2022; <b>Courses</b> Tco Gyumri- frontend developer</p>
-        <hr>
-        <h2>Language</h2>
-        <p>&#x2022; Armenian - Native</p>
-        <p>&#x2022; English - Advanced</p>
-        <p>&#x2022; Russian - Intermediate</p>
-    </main>
+export default App;
+-->
 
 
-</body>
-</html>
+
+## Education
++ University - HAPH GM(politechnik) - informatino and applied mathematics
++ Courses Tco Gyumri- frontend developer
+
+## Language
++ Armenian - Native
++ English - Advanced
++ Russian - Intermediate
