@@ -7,3 +7,29 @@ body{
 .divreact{
     background-color: rgb(63, 82, 58);
 }
+
+.footer-content{
+    display: flex;
+}
+
+.git{
+    padding-left: 20px;
+    padding-right: 80px;
+}
+
+.my-website{
+    padding-left: 20px;
+    padding-right: 80px;
+}
+
+.course-logo{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
+}
+
+.course-link{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 80px;
+}
